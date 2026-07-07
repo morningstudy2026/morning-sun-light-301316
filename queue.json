@@ -9,7 +9,8 @@
     {
       "title": "Tribal Leadership",
       "author": "Dave Logan, John King, Halee Fischer-Wright",
-      "completed": false
+      "completed": true,
+      "completed_on": "2026-07-07"
     },
     {
       "title": "The Art of Learning",
