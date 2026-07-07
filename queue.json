@@ -1,0 +1,15 @@
+{
+  "books": [
+    {"title": "The Devil's Chessboard", "author": "David Talbot", "completed": false},
+    {"title": "Tribal Leadership", "author": "Dave Logan, John King, Halee Fischer-Wright", "completed": false},
+    {"title": "The Art of Learning", "author": "Josh Waitzkin", "completed": false},
+    {"title": "Mastery", "author": "Robert Greene", "completed": false},
+    {"title": "Ernest Hemingway on Writing", "author": "edited by Larry W. Phillips", "completed": false},
+    {"title": "The Power of Full Engagement", "author": "Jim Loehr, Tony Schwartz", "completed": false},
+    {"title": "The Fighter's Mind: Inside the Mental Game", "author": "Sam Sheridan", "completed": false},
+    {"title": "The Laws of Subtraction", "author": "Matthew E. May", "completed": false},
+    {"title": "The Illusion of Victory", "author": "Thomas Fleming", "completed": false},
+    {"title": "Unreasonable Hospitality", "author": "Will Guidara", "completed": false},
+    {"title": "Debt: The First 5,000 Years", "author": "David Graeber", "completed": false}
+  ]
+}
