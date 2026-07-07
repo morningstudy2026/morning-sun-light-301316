@@ -1,1 +1,48 @@
+# Morning Study — generates your briefing every morning and publishes it
+# as a web page via GitHub Pages.
+#
+# UPLOAD LOCATION: this file must live at .github/workflows/morning-study.yml
+#
+# Schedule note: GitHub uses UTC. 9:00 UTC = 5:00 AM Eastern Daylight Time,
+# so the page is ready before 5:30. When clocks change in November this
+# becomes 4:00 AM Eastern — harmless, it just publishes earlier.
+
+name: Morning Study
+
+on:
+  schedule:
+    - cron: "0 9 * * *"     # daily, ready by 5:30 AM ET
+  workflow_dispatch: {}      # "Run workflow" button for testing anytime
+
+permissions:
+  contents: write            # allows saving the page and queue progress
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install anthropic markdown
+
+      - name: Generate briefing page
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python site_briefing.py
+
+      - name: Publish
+        run: |
+          git config user.name "morning-study-bot"
+          git config user.email "actions@github.com"
+          git add docs queue.json
+          git diff --cached --quiet || git commit -m "Morning briefing $(date -u +%F)"
+          git push
+
 
