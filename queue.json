@@ -15,7 +15,8 @@
     {
       "title": "The Art of Learning",
       "author": "Josh Waitzkin",
-      "completed": false
+      "completed": true,
+      "completed_on": "2026-07-08"
     },
     {
       "title": "Mastery",
