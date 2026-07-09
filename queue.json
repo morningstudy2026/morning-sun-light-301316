@@ -21,7 +21,8 @@
     {
       "title": "Mastery",
       "author": "Robert Greene",
-      "completed": false
+      "completed": true,
+      "completed_on": "2026-07-09"
     },
     {
       "title": "Ernest Hemingway on Writing",
