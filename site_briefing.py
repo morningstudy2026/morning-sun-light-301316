@@ -96,10 +96,10 @@ def collect_text(response) -> str:
 
 def get_news(client, today):
     prompt = f"""Today is {today}. Search the web for today's (or the most recent) top stories
-from D1 Ticker and from Bloomberg. Write a morning digest in markdown: the 6-10 most
+from D1 Ticker (d1ticker.com — the college athletics business newsletter; NOT D1Baseball) and from Bloomberg. Write a morning digest in markdown: the 6-10 most
 important items, each with a bolded one-line headline, 2-3 sentences of context entirely
 in your own words (never copy source wording), and a markdown link. Lead with the most
-markets-critical news. If D1 Ticker is inaccessible, note it briefly and cover Bloomberg
+important news from each source. If D1 Ticker is inaccessible, note it briefly and cover Bloomberg
 more deeply. Output only the digest, no preamble."""
     r = client.messages.create(model=MODEL, max_tokens=4000,
                                tools=[{"type": "web_search_20250305", "name": "web_search"}],
