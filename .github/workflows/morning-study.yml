@@ -43,6 +43,7 @@ jobs:
           git config user.email "actions@github.com"
           git add docs queue.json
           git diff --cached --quiet || git commit -m "Morning briefing $(date -u +%F)"
+          git pull --rebase origin main
           git push
 
 
