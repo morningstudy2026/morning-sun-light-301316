@@ -27,7 +27,8 @@
     {
       "title": "Ernest Hemingway on Writing",
       "author": "edited by Larry W. Phillips",
-      "completed": false
+      "completed": true,
+      "completed_on": "2026-07-10"
     },
     {
       "title": "The Power of Full Engagement",
