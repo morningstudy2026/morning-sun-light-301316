@@ -33,7 +33,8 @@
     {
       "title": "The Power of Full Engagement",
       "author": "Jim Loehr, Tony Schwartz",
-      "completed": false
+      "completed": true,
+      "completed_on": "2026-07-11"
     },
     {
       "title": "The Fighter's Mind: Inside the Mental Game",
