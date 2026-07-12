@@ -39,7 +39,8 @@
     {
       "title": "The Fighter's Mind: Inside the Mental Game",
       "author": "Sam Sheridan",
-      "completed": false
+      "completed": true,
+      "completed_on": "2026-07-12"
     },
     {
       "title": "The Laws of Subtraction",
