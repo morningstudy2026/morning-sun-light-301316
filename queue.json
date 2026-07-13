@@ -45,7 +45,8 @@
     {
       "title": "The Laws of Subtraction",
       "author": "Matthew E. May",
-      "completed": false
+      "completed": true,
+      "completed_on": "2026-07-13"
     },
     {
       "title": "The Illusion of Victory",
