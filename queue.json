@@ -63,7 +63,8 @@
     {
       "title": "Debt: The First 5,000 Years",
       "author": "David Graeber",
-      "completed": false
+      "completed": true,
+      "completed_on": "2026-07-16"
     }
   ]
 }
